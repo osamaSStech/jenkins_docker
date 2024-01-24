@@ -1,22 +1,22 @@
-pipeline{
+pipeline {
     agent any
     stages {
         stage("checkout") {
-            steps{
+            steps {
                 checkout scm
             }
         }
 
-        stage("Test"){
-            steps{
-                sh 'npm i'
-                sh 'test'
+        stage("Test") {
+            steps {
+                bat 'npm i'
+                bat 'npm test'
             }
         }
 
-        stage("Build"){
-            steps{
-                sh 'npm run build'
+        stage("Build") {
+            steps {
+                bat 'npm run build'
             }
         }
     }
