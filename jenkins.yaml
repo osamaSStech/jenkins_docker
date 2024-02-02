@@ -1,0 +1,1 @@
+<arguments>--privileged -Dfile.encoding=UTF-8 -Xmx2048m -XX:MaxPermSize=512m -Djava.awt.headless=true -Dhudson.model.DirectoryBrowserSupport.CSP="" -Djenkins.CLI.disabled=true -Djenkins.install.runSetupWizard=false -jar "%BASE%\jenkins.war" --httpPort=8080</arguments>
